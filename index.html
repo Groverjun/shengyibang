@@ -2,9 +2,101 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,
+			maximum-scale=1,user-scalable=no" />
 		<title>生意帮</title>
 		<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/CommonStyle.css"/>
 	</head>
 	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" id="header">
+		  	<ul class="list-inline">
+		  		<li><a href="#" class="iconfont icon-liebiao mat-button"></a></li>
+		  		<li><img src="img/header-img.png"/></li>
+		  		<li class="sho">全国客服热线：40000-99990</li>
+		  		<li class="pull-right sho">
+					<a href="#">
+						<i class="iconfont icon-yonghu"  style="font-size: 22px;"></i> 退出
+					</a>
+				</li>
+				<li class="pull-right sho">
+					<a href="#">
+						<i class="iconfont icon-xiaoxi"></i> 消息中心
+					</a>
+				</li>
+		  	</ul>
+		</nav>
+		<div id="left">
+			<ul class="left_list">
+				<li>
+					<a href="#" class="">
+						<i class="iconfont icon-zhexiantu"></i> 数据中心
+						<em class="iconfont icon-jiantou"></em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					
+					<i class="iconfont icon-xin"></i> 服务中心
+					<em class="iconfont icon-jiantou"></em>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					
+					<i class="iconfont icon-yonghu"></i> 用户中心
+					<em class="iconfont icon-jiantou"></em>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="right">
+			<div class="container">
+				<div class="row">
+					<div class=" col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
+							<div>
+								<h6>广告展示</h3>
+								<div class="text-center topTable_p">
+									<p class="text-center">15802</p>
+								</div>
+								<ul class="list-inline">
+									<li >
+										<p>今日</p>
+										<p>53</p>
+									</li>
+									<li>
+										<p>30日</p>
+										<p>1536</p>
+									</li>
+									<li>
+										<p>90日</p>
+										<p>4593</p>
+									</li>
+								</ul>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(window).resize(function () { 
+		    $("#left").height($(window).height())
+		});
+		$(".mat-button").on("click",function(){
+			if($("#left").css("left")=="0px"){
+				$("#left").css("left","-250px")
+			}else{
+				$("#left").css("left","0")				
+			}
+		})
+		$(".left_list li").on("click",function(){
+			$(this).css("background","rgba(0,0,0,0.2)").siblings().css("background","none")
+			$(this).find("em").css("transform","rotate(0deg)").parent().parent().siblings().find("em").css("transform","rotate(-90deg)")
+
+		})
+	</script>
 </html>

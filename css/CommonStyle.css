@@ -1,0 +1,108 @@
+body {
+  background: url(../img/background.jpg) no-repeat; }
+
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+  display: block; }
+
+a:hover, a:active, a:visited {
+  color: #fff;
+  text-decoration: none; }
+
+#header {
+  height: 64px;
+  background: rgba(0, 0, 0, 0.2);
+  border: none; }
+  #header a {
+    color: #fff;
+    text-decoration: none; }
+  #header .list-inline li .mat-button {
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    min-width: 88px;
+    line-height: 64px;
+    border-radius: 2px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px; }
+  #header .mat-button:hover {
+    background: rgba(0, 0, 0, 0.5); }
+  #header .list-inline li {
+    color: #fff; }
+  #header .list-inline img {
+    position: relative;
+    margin-top: -21px;
+    margin-right: 20px;
+    top: 6px;
+    height: 40px; }
+  #header .list-inline a {
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    min-width: 88px;
+    line-height: 64px;
+    border-radius: 2px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    display: flex;
+    align-items: center; }
+    #header .list-inline a > i {
+      font-size: 26px;
+      margin-right: 10px; }
+
+#left {
+  position: fixed;
+  top: 64px;
+  width: 250px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  left: -250px;
+  transition: all .5s; }
+  #left .left_list {
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0; }
+    #left .left_list li {
+      font-size: 18px;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 20px; }
+      #left .left_list li i {
+        font-size: 22px;
+        margin-right: 8px; }
+      #left .left_list li em {
+        font-size: 10px;
+        float: right;
+        transform: rotate(-90deg); }
+
+#right {
+  width: 100%;
+  margin-top: 64px;
+  color: #fff; }
+
+@media (max-width: 720px) {
+  .sho {
+    display: none !important; } }
+
+/*# sourceMappingURL=CommonStyle.css.map */
