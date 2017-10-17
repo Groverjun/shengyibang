@@ -268,6 +268,64 @@ a:hover,a:active,a:visited{color: #fff;text-decoration: none;}
         }
     }
 }
+#user{
+    margin-top: 80px;
+    color: #fff;
+    >div>div>h1{
+        padding: 12px;
+        background: rgba(0,0,0,0.2);
+        font-weight: 600;
+    }
+    >div>div>table{
+        border: none;
+        tbody>tr>td{
+            border: none ;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+    }
+    >div>div>ul{
+        margin: 0;padding: 0;
+        list-style: none;
+        li{
+            margin-bottom: 16px;
+            >.btn{
+                background: rgba(0,0,0,0.1);
+                color: #fff;
+                margin-left: 20px;
+                outline: inherit;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #footer{
     color: #fff;
     text-align: center;
@@ -284,6 +342,14 @@ a:hover,a:active,a:visited{color: #fff;text-decoration: none;}
             >.serverce_img:last-child{
                 width: 100%;
             }
+    }
+    #user{
+        >div>div>table{
+
+        tbody>tr>td>span{
+            display: block;
+        }
+    }
     }  
     
 }

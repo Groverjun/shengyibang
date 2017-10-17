@@ -247,6 +247,30 @@ a:hover, a:active, a:visited {
         #serviceCentre .service_list .serverce_ul > .serverce_img > ol > li:hover {
           background: rgba(0, 0, 0, 0.2); }
 
+#user {
+  margin-top: 80px;
+  color: #fff; }
+  #user > div > div > h1 {
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.2);
+    font-weight: 600; }
+  #user > div > div > table {
+    border: none; }
+    #user > div > div > table tbody > tr > td {
+      border: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  #user > div > div > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    #user > div > div > ul li {
+      margin-bottom: 16px; }
+      #user > div > div > ul li > .btn {
+        background: rgba(0, 0, 0, 0.1);
+        color: #fff;
+        margin-left: 20px;
+        outline: inherit; }
+
 #footer {
   color: #fff;
   text-align: center;
@@ -260,7 +284,10 @@ a:hover, a:active, a:visited {
     #serviceCentre .service_list .serverce_ul > .serverce_img {
       width: 100%; }
     #serviceCentre .service_list .serverce_ul > .serverce_img:last-child {
-      width: 100%; } }
+      width: 100%; }
+
+  #user > div > div > table tbody > tr > td > span {
+    display: block; } }
 @media (min-width: 768px) {
   #serviceCentre .service_list .serverce_ul {
     width: 100%;
