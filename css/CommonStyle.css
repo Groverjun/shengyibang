@@ -185,11 +185,123 @@ a:hover, a:active, a:visited {
       justify-content: center;
       border: 1px solid rgba(0, 0, 0, 0.1); }
 
+#serviceCentre {
+  margin-top: 80px;
+  color: #fff; }
+  #serviceCentre .service_list h1 {
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: 500; }
+  #serviceCentre .service_list .serverce_ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box; }
+    #serviceCentre .service_list .serverce_ul > .serverce_img {
+      width: 223px;
+      height: 223px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      margin: 5px;
+      position: relative; }
+      #serviceCentre .service_list .serverce_ul > .serverce_img > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #serviceCentre .service_list .serverce_ul > .serverce_img > ul li {
+          width: 100%;
+          text-align: center; }
+        #serviceCentre .service_list .serverce_ul > .serverce_img > ul > li > p {
+          margin-top: 20px;
+          text-align: center;
+          width: 100%; }
+        #serviceCentre .service_list .serverce_ul > .serverce_img > ul > li:hover img {
+          animation: bounce 1s; }
+      #serviceCentre .service_list .serverce_ul > .serverce_img > ol {
+        position: absolute;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        bottom: 0;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.05);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px; }
+        #serviceCentre .service_list .serverce_ul > .serverce_img > ol > li {
+          background: rgba(0, 0, 0, 0.05);
+          padding: 3px 5px;
+          width: 33%;
+          text-align: center;
+          border-radius: 2000px;
+          word-break: keep-all;
+          cursor: pointer; }
+        #serviceCentre .service_list .serverce_ul > .serverce_img > ol > li:hover {
+          background: rgba(0, 0, 0, 0.2); }
+
 #footer {
   color: #fff;
   text-align: center;
   margin: auto; }
 
+@media (max-width: 768px) {
+  #serviceCentre .service_list .serverce_ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; }
+    #serviceCentre .service_list .serverce_ul > .serverce_img {
+      width: 100%; }
+    #serviceCentre .service_list .serverce_ul > .serverce_img:last-child {
+      width: 100%; } }
+@media (min-width: 768px) {
+  #serviceCentre .service_list .serverce_ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; }
+    #serviceCentre .service_list .serverce_ul > .serverce_img {
+      width: 48.6%; }
+    #serviceCentre .service_list .serverce_ul > .serverce_img:last-child {
+      width: 100%; } }
+@media (min-width: 992px) {
+  #serviceCentre .service_list .serverce_ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap; }
+    #serviceCentre .service_list .serverce_ul > .serverce_img {
+      width: 223px; }
+    #serviceCentre .service_list .serverce_ul > .serverce_img:last-child {
+      width: 223px; } }
+@media (min-width: 1200px) {
+  #serviceCentre .service_list .serverce_ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; }
+    #serviceCentre .service_list .serverce_ul > .serverce_img {
+      width: 223px; }
+    #serviceCentre .service_list .serverce_ul > .serverce_img:last-child {
+      width: 223px; } }
+@-webkit-keyframes bounce {
+  0%,
+    100%,
+    20%,
+    50%,
+    80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px); } }
 @media (max-width: 720px) {
   .sho {
     display: none !important; } }
