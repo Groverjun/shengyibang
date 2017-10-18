@@ -1,6 +1,8 @@
-body {
+html, body {
   background: url(../img/background.jpg) no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  height: 100%;
+  overflow-y: auto; }
 
 a {
   color: #fff !important;
@@ -123,7 +125,7 @@ a:hover, a:active, a:visited {
       color: #4afef8;
       font-size: 24px; }
   #right #buttton > .btn {
-    width: 80px;
+    width: 70px;
     height: 32px;
     line-height: 32px;
     padding: 0;
@@ -271,12 +273,146 @@ a:hover, a:active, a:visited {
         margin-left: 20px;
         outline: inherit; }
 
+#detail {
+  margin-top: 80px;
+  color: #fff;
+  position: relative; }
+  #detail .table-bordered {
+    border: none; }
+  #detail .table-bordered > tbody > tr > td, #detail .table-bordered > tbody > tr > th, #detail .table-bordered > tfoot > tr > td, #detail .table-bordered > tfoot > tr > th, #detail .table-bordered > thead > tr > td, #detail .table-bordered > thead > tr > th {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 200px;
+    cursor: pointer; }
+
+#information {
+  margin-top: 80px;
+  color: #fff !important; }
+  #information .btn-default {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.01);
+    color: #fff !important;
+    outline: inherit;
+    padding: 15px 12px;
+    font-size: 16px; }
+    #information .btn-default > .iactive {
+      padding: 5px;
+      background: #fe0200;
+      position: absolute;
+      border-radius: 5px;
+      font-size: 12px;
+      font-style: normal;
+      top: 0; }
+  #information .btn-active {
+    background: rgba(0, 0, 0, 0.3);
+    white-space: nowrap; }
+  #information .table-bordered {
+    border: none; }
+  #information .table-bordered > tbody > tr > td, #information .table-bordered > tbody > tr > th, #information .table-bordered > tfoot > tr > td, #information .table-bordered > tfoot > tr > th, #information .table-bordered > thead > tr > td, #information .table-bordered > thead > tr > th {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+    max-width: 230px;
+    overflow: hidden;
+    white-space: nowrap; }
+
+#login_ul {
+  height: 64px;
+  line-height: 64px;
+  padding: 0 12px; }
+
+#login {
+  margin-top: 80px;
+  color: #fff; }
+  #login .login_box {
+    width: 620px;
+    height: 470px;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    #login .login_box > .login_top {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #3293df;
+      box-sizing: border-box;
+      box-shadow: 0 0 0px 16px rgba(255, 255, 255, 0.3);
+      margin: auto;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      z-index: 10; }
+    #login .login_box > .login_form {
+      width: 100%;
+      height: 380px;
+      box-shadow: 0 0 0px 16px rgba(255, 255, 255, 0.1);
+      background: #f8f8f8;
+      position: absolute;
+      top: 60px;
+      padding: 90px 50px 0; }
+      #login .login_box > .login_form .form-group {
+        margin-bottom: 25px; }
+      #login .login_box > .login_form .input-group-addon {
+        background: none !important;
+        padding: 6px 21px; }
+      #login .login_box > .login_form .form-control {
+        background: none !important;
+        padding: 27px 12px;
+        outline: inherit; }
+      #login .login_box > .login_form #yan {
+        cursor: pointer; }
+    #login .login_box p {
+      color: red;
+      padding: 0;
+      margin: 0; }
+
 #footer {
   color: #fff;
   text-align: center;
   margin: auto; }
 
 @media (max-width: 768px) {
+  #login .login_box {
+    width: 100% !important;
+    color: #fff; }
+    #login .login_box > .login_form {
+      background: none;
+      box-shadow: none;
+      padding-top: 120px;
+      padding: 90px 5%; }
+      #login .login_box > .login_form .input-group-addon {
+        color: #FFF;
+        border: none;
+        background: rgba(255, 255, 255, 0.1); }
+        #login .login_box > .login_form .input-group-addon > i {
+          font-size: 24px; }
+      #login .login_box > .login_form .form-control {
+        border: none;
+        color: #fff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.1);
+        outline: inherit !important; }
+      #login .login_box > .login_form input::-webkit-input-placeholder, #login .login_box > .login_form textarea::-webkit-input-placeholder {
+        color: #fff; }
+      #login .login_box > .login_form #yan {
+        background: rgba(255, 255, 255, 0.1) !important;
+        padding: 10px 12px; }
+      #login .login_box > .login_form .btn-primary {
+        background: #3293DF;
+        border: none;
+        outline: inherit; }
+
   #serviceCentre .service_list .serverce_ul {
     width: 100%;
     display: flex;
@@ -287,7 +423,10 @@ a:hover, a:active, a:visited {
       width: 100%; }
 
   #user > div > div > table tbody > tr > td > span {
-    display: block; } }
+    display: block; }
+
+  #detail .table-bordered > tbody > tr > td, #detail .table-bordered > tbody > tr > th, #detail .table-bordered > tfoot > tr > td, #detail .table-bordered > tfoot > tr > th, #detail .table-bordered > thead > tr > td, #detail .table-bordered > thead > tr > th {
+    max-width: 30px; } }
 @media (min-width: 768px) {
   #serviceCentre .service_list .serverce_ul {
     width: 100%;
@@ -296,7 +435,10 @@ a:hover, a:active, a:visited {
     #serviceCentre .service_list .serverce_ul > .serverce_img {
       width: 48.6%; }
     #serviceCentre .service_list .serverce_ul > .serverce_img:last-child {
-      width: 100%; } }
+      width: 100%; }
+
+  #detail .table-bordered > tbody > tr > td, #detail .table-bordered > tbody > tr > th, #detail .table-bordered > tfoot > tr > td, #detail .table-bordered > tfoot > tr > th, #detail .table-bordered > thead > tr > td, #detail .table-bordered > thead > tr > th {
+    max-width: 30px; } }
 @media (min-width: 992px) {
   #serviceCentre .service_list .serverce_ul {
     width: 100%;

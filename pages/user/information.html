@@ -9,11 +9,6 @@
 			<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
 			<link rel="stylesheet" type="text/css" href="../../css/CommonStyle.css"/>
 		<title></title>
-		<style type="text/css">
-			html,body{
-
-			}
-		</style>
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top" id="header">
@@ -67,51 +62,44 @@
 				</li>
 			</ul>
 		</div>
-		<div id="user">
+		<div id="information">
 			<div class="container">
 				<div class="row">
-					<h1 class="h5">我的产品</h1>
+					<div class="btn-group btn-group-justified" role="group" aria-label="...">
+					  <div class="btn-group" role="group">
+					    <button type="button" class="btn btn-default btn-active">系统消息<i class="iactive">222</i></button>
+					  </div>
+					  <div class="btn-group" role="group">
+					    <button type="button" class="btn btn-default">商机消息<i></i></button>
+					  </div>
+					  <div class="btn-group" role="group">
+					    <button type="button" class="btn btn-default">服务消息<i></i></button>
+					  </div>
+					</div>
 				</div>
 				<div class="row">
-					<table class="table table-bordered">
-						<tbody>
-							<tr>
-								<td>产品名称：<span>云商包</span></td>
-								<td>购买日期：<span>2016年9月20日</span></td>
-								<td>到期日期：<span>2017年9月20日</span></td>
-								<td>状态：<span>服务中</span></td>
-							</tr>
-							<tr>
-								<td>产品名称：<span>直通车</span></td>
-								<td>购买日期：<span>2016年9月20日</span></td>
-								<td>到期日期：<span>2017年9月20日</span></td>
-								<td>状态：<span>服务中</span></td>
-							</tr>
-							<tr>
-								<td>产品名称：<span>云商包</span></td>
-								<td>购买日期：<span>2016年9月20日</span></td>
-								<td>到期日期：<span>2017年9月20日</span></td>
-								<td>状态：<span>服务中</span></td>
-							</tr>
-							<tr>
-								<td>产品名称：<span>直通车</span></td>
-								<td>购买日期：<span>2016年9月20日</span></td>
-								<td>到期日期：<span>2017年9月20日</span></td>
-								<td>状态：<span>服务中</span></td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="row">
-					<h1 class="h5">设置管理</h1>
-				</div>
-				<div class="row">
-					<ul>
-						<li>企业名称：<span>北京赫德电子科技有限公司</span></li>
-						<li>绑定手机：<span>17736177850</span><button class="btn btn-default">解绑手机号</button></li>
-						<li>企业邮箱：<span>123456@126.com</span></li>
-						<li>企业地址：<span>北京市</span></li>
-					</ul>
+						<table class="table table-bordered">
+							<thead class="text-center">
+								<tr>
+									<td>序号</td>
+									<td>时间</td>
+									<td>内容</td>
+								</tr>
+							</thead>
+							<tbody class="text-center">
+								<tr>
+									<td>
+										01
+									</td>
+									<td>
+										2017-02-12-14:13
+									</td>
+									<td title="恭喜您已成功开通信融生意帮服务平台恭喜您已成功开通信融生意帮服务平台">
+										恭喜您已成功开通信融生意帮服务平台										
+									</td>
+								</tr>
+							</tbody>
+						</table>
 				</div>
 			</div>
 		</div>
@@ -127,4 +115,9 @@
 	</body>
 	<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../js/all.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#information .btn-group button").on("click",function(){
+			$(this).addClass("btn-active").parent().siblings().find("button").removeClass("btn-active")
+		})
+	</script>
 </html>
