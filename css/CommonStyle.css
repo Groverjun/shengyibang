@@ -613,6 +613,8 @@ a:visited {
 	#detail .table-bordered>thead>tr>th {
 		max-width: 30px;
 	}
+	#right  .guanT_list .h4{font-size: 14px;}
+	#right #guan{margin-bottom: 100px;}
 }
 
 @media (min-width: 992px) {
@@ -627,6 +629,10 @@ a:visited {
 	#serviceCentre .service_list .serverce_ul>.serverce_img:last-child {
 		width: 223px;
 	}
+	#right  .guanT_list .h4{font-size: 18px;}
+	#right #guan{margin-bottom: 100px;}
+	
+		
 }
 
 @media (min-width: 1200px) {
@@ -641,6 +647,9 @@ a:visited {
 	#serviceCentre .service_list .serverce_ul>.serverce_img:last-child {
 		width: 223px;
 	}
+	#right  .guanT_list .h4{font-size: 18px;}
+	#right #guan{margin-bottom: 12px;}
+	
 }
 
 @-webkit-keyframes bounce {
