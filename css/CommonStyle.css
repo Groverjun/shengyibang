@@ -545,6 +545,7 @@ a:visited {
 		color: #FFF;
 		border: none;
 		background: rgba(255, 255, 255, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 	}
 	#login .login_box>.login_form .input-group-addon>i {
 		font-size: 24px;
