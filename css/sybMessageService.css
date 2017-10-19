@@ -6,7 +6,7 @@ html,body{
 }
 #sybMessageService{
 	height: 214px;
-	width: 46px;
+	width: 63px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -28,7 +28,7 @@ html,body{
 	height: 46px;
 	border-radius: 50%;
 	overflow: hidden;
-	top: -40px;
+	top: -23px;
     left: -1px;
     border: 1px solid #E3323A;
 
