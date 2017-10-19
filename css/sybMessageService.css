@@ -198,13 +198,13 @@ html,body{
 #sybMessageService .tel:hover .tel_title{
 	opacity: 1;
 }
-#sybMessageService .tel .vip_txt{
+#sybMessageService .tel .tel_txt{
 	position: absolute;
-	width: 108px;
+	width: 0px;
 	height: 138px;
 	position: absolute;
 	top: -96px;
-	left: -108px;
+	left: -0px;
 	background: rgba(255,255,255,0.6);
 	opacity: 0;
 	box-sizing: border-box;
@@ -213,7 +213,7 @@ html,body{
 	font-size: 12px;
 
 }
-#sybMessageService .tel:hover .vip_txt{
+#sybMessageService .tel:hover .tel_txt{
 	width: 108px;
 	left: -108px;
 	opacity: 1;
@@ -221,14 +221,14 @@ html,body{
 	z-index: 999;
 	
 }
-#sybMessageService .tel:hover .vip_txt>div{
+#sybMessageService .tel:hover .tel_txt>div{
 	display: block;
 }
-#sybMessageService .tel .vip_txt>div{
+#sybMessageService .tel .tel_txt>div{
 	margin-bottom: 5px;
 	display: none;
 }
-#sybMessageService .tel .vip_txt .vip_txtB>input{
+#sybMessageService .tel .tel_txt .tel_txtB>input{
 	width: 90%;
 	border: none;
 	background: #c4c7cf;
@@ -236,7 +236,7 @@ html,body{
 	padding: 5px ;
 	outline: inherit;
 }
-#sybMessageService .tel .vip_txt .vip_txtB>button{
+#sybMessageService .tel .tel_txt .tel_txtB>button{
 	border: none;
 	outline: inherit;
 	background: #fe0000;
@@ -246,7 +246,7 @@ html,body{
 	padding:3px  10px;
 
 }
-#sybMessageService .tel .vip_txt .triangle{
+#sybMessageService .tel .tel_txt .triangle{
 	width: 0;
 	height: 0;
 	display: block;
