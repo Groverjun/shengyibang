@@ -5,8 +5,8 @@ html,body{
 	background-size: 100% 100%;
 }
 #sybMessageService{
-	height: 183px;
-	width: 43px;
+	height: 214px;
+	width: 46px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -15,18 +15,30 @@ html,body{
 	top: 0;
 	bottom: 0;
 	right: 30px;
-	background: rgba(255,255,255,0.5);
+	background: url(../img/bg-gril.png) no-repeat;
+	padding-top: 43px;
+    padding-left: 17px;
 }
-#sybMessageService>li{cursor: pointer;}
-#sybMessageService .serviceGirl{position: relative;height: 8px;}
-#sybMessageService>.serviceGirl>img{
+#sybMessageService>li{cursor: pointer;border-top: 1px solid #fff;}
+#sybMessageService .serviceGirl{position: relative;height: 25px;}
+
+#sybMessageService>.serviceGirl>.serviceGirl_img{
 	position: absolute;
-	top: -44px;
-    left: -16px;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	overflow: hidden;
+	top: -40px;
+    left: -1px;
+    border: 1px solid #E3323A;
+
+}
+#sybMessageService>li{
+	background: rgba(255,255,255,0.3);
 
 }
 #sybMessageService .serviceGirlName{
-	margin-top: 10px;
+border: none;
 }
 #sybMessageService .serviceGirlName>p{
 	color: #e3323a;
@@ -34,7 +46,7 @@ html,body{
 	text-align: center;
 	padding: 5px 0;
 	margin: 0;
-	border-bottom: 1px solid #fff;
+
 }
 #sybMessageService .QQ{
 	text-align: center;
@@ -59,17 +71,19 @@ html,body{
 	opacity:1 ;
 }
 #sybMessageService .QQ .QQ_txt{
-	width: 0;
+	width: 108px;
 	height: 138px;
 	position: absolute;
 	top: 0;
-	left: 0px;
+	left: -108px;
+	display: none;
 	background: rgba(255,255,255,0.6);
-	opacity: 0;
-
 	box-sizing: border-box;
-	transition: all 0.2s;
-	padding: 0;
+	-webkit-animation: i .3s ease-in-out forwards;
+	animation: i .3s ease-in-out forwards;
+	-webkit-transform-origin: right center;
+	transform-origin: right center;
+	padding: 16px 10px;
 }
 #sybMessageService .QQ .QQ_txt .triangle{
 	width: 0;
@@ -82,20 +96,10 @@ html,body{
 	top:12px;
 }
 #sybMessageService .QQ:hover .QQ_txt{
-	opacity:1 ;
-	width: 108px;
-	left: -108px;
-	padding: 16px 10px;
-	z-index: 999;
-	
+	display: block;	
 }
 
-#sybMessageService .QQ:hover .QQ_txt>div{
-	display: block;
-}
-#sybMessageService .QQ .QQ_txt>div{
-	display: none;
-}
+
 #sybMessageService .QQ .QQ_txt .QQ_txtP{
 	font-size: 12px;
 	line-height: 18px;
@@ -118,7 +122,7 @@ html,body{
 	position: relative;
 	padding: 0;
 	padding: 6px 0;
-	border-top: 1px solid #fff;
+
 }
 #sybMessageService .vip .vip_title{
 	width: 100%;
@@ -138,17 +142,20 @@ html,body{
 }
 #sybMessageService .vip .vip_txt{
 	position: absolute;
-	width: 0px;
+	width: 108px;
 	height: 138px;
 	position: absolute;
 	top: -48px;
-	left: 0px;
+	left: -108px;
 	background: rgba(255,255,255,0.6);
-	opacity: 0;
 	box-sizing: border-box;
-	transition: all 0.2s;
-	padding: 0;
+	display: none;
+	padding: 16px 10px;
 	font-size: 12px;
+	-webkit-animation: i .3s ease-in-out forwards;
+	animation: i .3s ease-in-out forwards;
+	-webkit-transform-origin: right center;
+	transform-origin: right center
 }
 #sybMessageService .vip .vip_txt .triangle{
 	width: 0;
@@ -165,22 +172,15 @@ html,body{
 	font-size: 12px;
 }
 #sybMessageService .vip:hover .vip_txt{
-	opacity:1 ;
-	width: 108px;
-	left: -108px;
-	padding: 16px 10px;
-	z-index: 999;
-}
-#sybMessageService .vip .vip_txt>div{display: none;}
-#sybMessageService .vip:hover .vip_txt>div{
 	display: block;
 }
+
 #sybMessageService .tel{
 	text-align: center;
 	position: relative;
 	padding: 0;
 	padding: 6px 0;
-	border-top: 1px solid #fff;
+
 }
 #sybMessageService .tel .tel_title{
 	width: 100%;
@@ -200,33 +200,31 @@ html,body{
 }
 #sybMessageService .tel .tel_txt{
 	position: absolute;
-	width: 0px;
+	width: 108px;
 	height: 138px;
 	position: absolute;
 	top: -96px;
-	left: -0px;
+	left: -108px;
 	background: rgba(255,255,255,0.6);
-	opacity: 0;
+	display: none;
 	box-sizing: border-box;
 	transition: all 0.2s;
-	padding: 0;
+	padding: 16px 5px;
 	font-size: 12px;
+	-webkit-animation: i .3s ease-in-out forwards;
+	animation: i .3s ease-in-out forwards;
+	-webkit-transform-origin: right center;
+	transform-origin: right center
 
 }
 #sybMessageService .tel:hover .tel_txt{
-	width: 108px;
-	left: -108px;
-	opacity: 1;
-	padding: 16px 5px;
-	z-index: 999;
+	display: block;
 	
 }
-#sybMessageService .tel:hover .tel_txt>div{
-	display: block;
-}
+
 #sybMessageService .tel .tel_txt>div{
 	margin-bottom: 5px;
-	display: none;
+
 }
 #sybMessageService .tel .tel_txt .tel_txtB>input{
 	width: 90%;
@@ -255,4 +253,16 @@ html,body{
 	position: absolute;
 	right: 0;
 	top:105px;
+}
+@keyframes i {
+	0% {
+		opacity: 0;
+		-webkit-transform: scale(0);
+		transform: scale(0)
+	}
+	to {
+		opacity: 100;
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
 }
