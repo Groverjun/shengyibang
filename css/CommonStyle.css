@@ -64,9 +64,11 @@ a:visited {
 #header .mat-button:hover {
 	background: rgba(0, 0, 0, 0.5);
 }
-
+#header .list-inline{margin-right: 30px;}
 #header .list-inline li {
 	color: #fff;
+	line-height: 62px;
+	margin-left: 20px;
 }
 
 #header .list-inline img {
@@ -95,13 +97,24 @@ a:visited {
 	margin: 0;
 	padding: 0;
 	color: #fff;
-	display: flex;
-	align-items: center;
-}
+	position: relative;
 
+}
+#header .list-inline a>em{
+	position: absolute;
+    height: 15px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 15px;
+    background: red;
+    top: 14px;
+    left: 97px;
+    width: 25px;
+}
 #header .list-inline a>i {
 	font-size: 26px;
 	margin-right: 10px;
+	float: left;
 }
 
 #left {
@@ -110,11 +123,18 @@ a:visited {
 	width: 250px;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.3);
-	left: -250px;
+	left: 0px;
 	transition: all .5s;
 	z-index: 10;
+	
 }
-
+#left>em{
+	color: #fff;
+    position: absolute;
+    font-size: 24px;
+    cursor: pointer;
+    right: -24px;
+}
 #left .left_list {
 	list-style: none;
 	color: #fff;
@@ -250,9 +270,7 @@ a:visited {
 	padding: 0;
 	height: 80px;
 	margin-bottom: 9px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
 	border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -270,11 +288,11 @@ a:visited {
 
 #serviceCentre .service_list .serverce_ul {
 	width: 100%;
-	display: flex;
-	flex-flow: row wrap;
-	box-sizing: border-box;
+	
 }
-
+#serviceCentre .service_list .serverce_ul>div{
+		float: left;
+	}
 #serviceCentre .service_list .serverce_ul>.serverce_img {
 	width: 223px;
 	height: 223px;
@@ -285,18 +303,21 @@ a:visited {
 
 #serviceCentre .service_list .serverce_ul>.serverce_img>ul {
 	list-style: none;
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	position: absolute;
 	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	height: 83px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
 }
 
 #serviceCentre .service_list .serverce_ul>.serverce_img>ul li {
 	width: 100%;
+
 	text-align: center;
 }
 
@@ -318,10 +339,7 @@ a:visited {
 	width: 100%;
 	bottom: 0;
 	height: 40px;
-	background: rgba(0, 0, 0, 0.05);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	background: rgba(0, 0, 0, 0.05);	
 	padding: 0 5px;
 }
 
@@ -333,6 +351,8 @@ a:visited {
 	border-radius: 2000px;
 	word-break: keep-all;
 	cursor: pointer;
+	float: left;
+	margin-top: 7px;
 }
 
 #serviceCentre .service_list .serverce_ul>.serverce_img>ol>li:hover {
@@ -477,9 +497,7 @@ a:visited {
 	box-shadow: 0 0 0px 16px rgba(255, 255, 255, 0.3);
 	margin: auto;
 	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	padding-top: 20px;
 	font-size: 24px;
 	position: absolute;
 	top: 0;
@@ -573,8 +591,7 @@ a:visited {
 	}
 	#serviceCentre .service_list .serverce_ul {
 		width: 100%;
-		display: flex;
-		flex-flow: row wrap;
+		
 	}
 	#serviceCentre .service_list .serverce_ul>.serverce_img {
 		width: 100%;
@@ -598,8 +615,7 @@ a:visited {
 @media (min-width: 768px) {
 	#serviceCentre .service_list .serverce_ul {
 		width: 100%;
-		display: flex;
-		flex-flow: row wrap;
+		
 	}
 	#serviceCentre .service_list .serverce_ul>.serverce_img {
 		width: 48.6%;
@@ -622,8 +638,7 @@ a:visited {
 @media (min-width: 992px) {
 	#serviceCentre .service_list .serverce_ul {
 		width: 100%;
-		display: flex;
-		flex-flow: row nowrap;
+		
 	}
 	#serviceCentre .service_list .serverce_ul>.serverce_img {
 		width: 223px;
@@ -638,8 +653,10 @@ a:visited {
 @media (min-width: 1200px) {
 	#serviceCentre .service_list .serverce_ul {
 		width: 100%;
-		display: flex;
-		flex-flow: row wrap;
+		
+	}
+	#serviceCentre .service_list .serverce_ul>div{
+		float: left;
 	}
 	#serviceCentre .service_list .serverce_ul>.serverce_img {
 		width: 223px;
@@ -677,4 +694,8 @@ a:visited {
 	}
 }
 
-
+.Ri{
+	position: relative;
+	left: 200px;
+	transition: all 0.5s;
+}

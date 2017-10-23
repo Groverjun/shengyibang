@@ -7,13 +7,13 @@
 			<link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />			
 			<link rel="stylesheet" type="text/css" href="../../css/iconfont.css"/>
 			<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css"/>
+			<link rel="stylesheet" type="text/css" href="../../css/layui.css"/>
 			<link rel="stylesheet" type="text/css" href="../../css/CommonStyle.css"/>
 		<title></title>
 	</head>
 	<body>
 		<nav class="navbar navbar-default navbar-fixed-top" id="header">
 		  	<ul class="list-inline">
-		  		<li><a  class="iconfont icon-liebiao mat-button"></a></li>
 		  		<li><img src="../../img/header-img.png"/></li>
 		  		<li class="sho">全国客服热线：40000-99990</li>
 		  		<li class="pull-right sho">
@@ -31,7 +31,7 @@
 		<div id="left">
 			<ul class="left_list">
 				<li>
-					<a href="../../index.html" class="">
+					<a href="../../index.html">
 						<i class="iconfont icon-zhexiantu"></i> 数据中心
 						<em class="iconfont icon-jiantou"></em>
 					</a>
@@ -49,7 +49,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="../user/user.html">					
+					<a href="../user/information.html">					
 						<i class="iconfont icon-xiaoxi"></i> 消息中心
 						<em class="iconfont icon-jiantou"></em>
 					</a>
@@ -61,8 +61,9 @@
 					</a>
 				</li>
 			</ul>
+			<em class="iconfont icon-icon-copy-copy1"></em>
 		</div>
-		<div id="detail">
+		<div id="detail" class="Ri">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -115,6 +116,11 @@
 						</table>						
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<div id="fenye" class="pull-right"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="footer">
@@ -128,5 +134,34 @@
 		</div>		
 	</body>
 	<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../js/layui.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../js/all.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$.ajax({
+				type:"get",
+				url:"",
+				async:true,
+				success:function(data){
+					var count= data.count;
+					
+					
+				}
+			});
+			layui.use(['laypage', 'layer'], function() {
+				var laypage = layui.laypage,
+					layer = layui.layer;
+				laypage.render({
+					elem: 'fenye',//分页容器id
+					count: 70 ,//数据总数
+					limit:10,//每页显示条数
+					jump: function(obj) {
+						console.log(obj.count)//数据总数
+						console.log(obj.limit)//每页显示条数
+						console.log(obj.curr)//当前页数
+						
+						//方法..
+					}
+				});
+			});
+	</script>
 </html>
